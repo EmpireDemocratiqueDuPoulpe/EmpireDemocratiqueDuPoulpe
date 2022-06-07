@@ -1,4 +1,8 @@
-### Hi there 👋
+![s](https://github.com/EmpireDemocratiqueDuPoulpe/EmpireDemocratiqueDuPoulpe/blob/main/gifs/s.gif)
+![a](https://github.com/EmpireDemocratiqueDuPoulpe/EmpireDemocratiqueDuPoulpe/blob/main/gifs/a.gif)
+![l](https://github.com/EmpireDemocratiqueDuPoulpe/EmpireDemocratiqueDuPoulpe/blob/main/gifs/l.gif)
+![u](https://github.com/EmpireDemocratiqueDuPoulpe/EmpireDemocratiqueDuPoulpe/blob/main/gifs/u.gif)
+![t](https://github.com/EmpireDemocratiqueDuPoulpe/EmpireDemocratiqueDuPoulpe/blob/main/gifs/t.gif)
 
 <!--
 **EmpireDemocratiqueDuPoulpe/EmpireDemocratiqueDuPoulpe** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

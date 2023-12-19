@@ -1,0 +1,35 @@
+{
+  "name": "empiredemocratiquedupoulpe",
+  "version": "1.0.0",
+  "description": "Automated profile README.md",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node build/index.js",
+    "build": "npx tsc",
+    "build:watch": "npx tsc-watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmpireDemocratiqueDuPoulpe/EmpireDemocratiqueDuPoulpe.git"
+  },
+  "keywords": [
+    "readme",
+    "automated",
+    "github"
+  ],
+  "author": "Empire Démocratique du Poulpe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EmpireDemocratiqueDuPoulpe/EmpireDemocratiqueDuPoulpe/issues"
+  },
+  "homepage": "https://github.com/EmpireDemocratiqueDuPoulpe/EmpireDemocratiqueDuPoulpe#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "markdown-it": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^13.0.7",
+    "@types/node": "^20.10.5"
+  }
+}

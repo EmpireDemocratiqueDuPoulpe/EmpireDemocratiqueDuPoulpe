@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+	"target": "ES5",
+	"module": "CommonJS",
+	"strict": true,
+	"moduleResolution": "node",
+	"esModuleInterop": true,
+	"skipLibCheck": true,
+	"forceConsistentCasingInFileNames": true,
+	"outDir": "build"
+  },
+  "include": [ "src/*" ]
+}

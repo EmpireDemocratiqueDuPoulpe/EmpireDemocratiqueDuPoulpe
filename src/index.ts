@@ -49,7 +49,8 @@ async function generateReadme() : Promise<void> {
 		## Contact
 		<div align="center">\n
 		${buildBadges()}
-		</div>
+		</div>\n
+		> Updated at: ${new Date().toLocaleString()}
 	`;
 
 	const markdown: string = purify.sanitize(await marked.parse(markdownText));

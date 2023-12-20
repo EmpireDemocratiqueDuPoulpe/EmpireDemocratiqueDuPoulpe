@@ -122,3 +122,7 @@ _&gt;</b> Just Do It is a website with the task to increase our productivity by 
 <a href="https://www.linkedin.com/in/alexicomte/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;labelColor=04284D&amp;logoColor=0A66C2&amp;logo=linkedin"></a>
 <a href="mailto:alexislecomte.pro@protonmail.com"><img alt="E--Mail" src="https://img.shields.io/badge/E--Mail-D66049?style=for-the-badge&amp;labelColor=55261D&amp;logoColor=D66049&amp;logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACb0lEQVR4Ae3Bu26WBQAG4Of9xMTFmNRCvIoSuAP4Wx29A3VD4yAUKKLLv3ig0gbjYExMjHHUK7CVkTCBLYd7wB4SdTFheG0CSZEWKnJY5Hk8978XW9q+iIN4ybPxF1aS3N7njpfxDQ57NlYwwsbQ9s0km5jBFU/fCkZJNtq+OeCnth8l2cQMrnh6VjBKstH2Q/w4YB8+aXs2ySZmcMWTt4LpJBttT+MzvDjY9mnbM0k2MYOrnpwVTCdZb3sS8+4a/NPnbeeSbGIaVz2+VUwnWW87i/PuMdjpXNu5JJuYwVX/3SpGSdbbzmLBfQa7O9f2dJINzOBXj24VoyTrbWexYBeDB5tvezrJBl7Hqn/vBmaSrLc9gQUPMHi4+bank6xhGtfs7QaOJvmt7QkseojB3ubbnkqyhhGuebAbOJLkt7bHsWgPg0eQZA0jXLPTTYySrHkEg73NJTnfdn/bd5KsYYTrtt3E0SS32r7V9kCSCzhhD4OHm0vyRdv9WMZ3bU8mWcNRXMZlHE1yq+0H+B4X2x5IcgGzHiLdYndzSb5o+youYsq240m+dI+27+MrxB3XcSTJetsTWLSLdIudziSZbzuJXzBlp6/xgzvexjE7rWKUZL3tLBbcZ7DTmSTzbSfwM6bs7j1cwiUcs7sp/NJ2MskiTrrP4J/OJJlvO4FlHPL4prDcdjLJIk65x2Dbh0nm205gGYc8OQex3HYyyQJOuWvAbXyc5FzbCSzhkCfvIJbbTiZZwFncfmE8Hq8m+bbtBJZw2NPzGt4Yj8c/Jlkaj8ersaXtBJZw2LOxglGSjX3u+BPv4hXPxu/4w3PPbfkb8UIT22HE0IcAAAAASUVORK5CYII="></a></p>
 </div>
+
+<blockquote>
+<p>Updated at: 20/12/2023 16:03:24</p>
+</blockquote>

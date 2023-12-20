@@ -37,7 +37,8 @@ async function generateReadme() : Promise<void> {
 		\n---
 		## Projects
 		<details>\n
-		<summary>School projects</summary>
+		<summary><b>School projects</b></summary>
+		<br/>
 		Here's the list of the projects I have done during my studies.
 		${await buildRepositories({
 		filterBy: { topics: ["school-project"] } })}

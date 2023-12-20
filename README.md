@@ -10,7 +10,8 @@
 <h2>Projects</h2>
 <details>
 
-<summary>School projects</summary>
+<summary><b>School projects</b></summary>
+<br>
 Here's the list of the projects I have done during my studies.
 <ul>
 <li>

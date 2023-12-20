@@ -1,16 +1,15 @@
 import constants from "../constants";
 
-export default function buildBadges(
-	style: "flat" | "flat-square" | "plastic" | "for-the-badge" | "social" = "flat",
-	background: `#${string}`,
-	foreground: `#${string}`
-) : string {
-	const colors: { background: string, foreground: string } = {
-		background: background.replace("#", ""),
-		foreground: foreground.replace("#", "")
-	};
+export default function buildBadges() : string {
+	console.log("\t> Building badges...");
+	const badges: string[] = [];
 
-	return `
-		![Website](https://img.shields.io/website-${colors.background}?style=${style}&labelColor=${colors.foreground}&logoColor=${colors.foreground}&logo=${constants.WEBSITE_LOGO}/${encodeURIComponent(constants.WEBSITE_URL)})
-	`;
+	for (const badge of constants.BADGES.list) {
+		badges.push(
+			`[![${badge.text}](https://img.shields.io/badge/${badge.text}-${badge.colors.background}?style=${constants.BADGES.theme}&labelColor=${badge.colors.foreground}&logoColor=${badge.colors.background}&logo=${badge.logo})](${encodeURIComponent(badge.uri)})`
+		);
+	}
+
+
+	return badges.join("\n");
 }

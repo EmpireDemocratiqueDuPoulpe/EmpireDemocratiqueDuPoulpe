@@ -1,0 +1,30 @@
+name: Update README.md
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron "0 5 * * 1"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install dependencies
+        run: npm install
+      - name: Build README.md file
+        run: npm run start
+      - name: Push to repository if different
+        run: |-
+          git add .
+          git diff
+          git config --global user.email = "alexislecomte.pro@protonmail.com"
+          git config --global user.name = "EmpireDemocratiqueDuPoulpe"
+          git commit -m "auto-update: Rebuilt README.md" -a || exit 0
+          git push

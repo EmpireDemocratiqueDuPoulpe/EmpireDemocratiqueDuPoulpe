@@ -2,8 +2,9 @@ import { fetch, Response } from "undici";
 import { FetchFailed } from "../exceptions";
 import type { RepositoryData } from "../typings/global";
 
-async function fetchRepository(owner: string, repositoryName: string) : Promise<RepositoryData> {
-	const uri: string = `https://api.github.com/repos/${owner}/${repositoryName}`;
+async function fetchAllRepositoriesOf(owner: string, page: number = 1) : Promise<RepositoryData[]> {
+	const repoPerPage: number = 100;
+	const uri: string = `https://api.github.com/users/${owner}/repos?type=all&sort=created&direction=desc&per_page=${repoPerPage}&page=${page}`;
 	console.log(`Sending request to "${uri}"...`);
 
 	const response: Response = await fetch(uri, { method: "GET" });
@@ -14,9 +15,15 @@ async function fetchRepository(owner: string, repositoryName: string) : Promise<
 		throw new FetchFailed(uri, error);
 	}
 
-	return await response.json() as RepositoryData;
+	const repositories: RepositoryData[] = await response.json() as RepositoryData[];
+
+	if (repositories.length === repoPerPage) {
+		repositories.push(...await fetchAllRepositoriesOf(owner, page + 1));
+	}
+
+	return repositories;
 }
 
 export default {
-	fetchRepository
+	fetchAllRepositoriesOf
 };

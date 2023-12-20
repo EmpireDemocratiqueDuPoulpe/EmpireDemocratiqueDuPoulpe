@@ -21,7 +21,7 @@ export default function buildStats({
 	if (hideRank) { params += "&hide_rank=true"; }
 
 	return dedent`
-		[![${constants.OWNER}'s GitHub stats](https://github-readme-stats.vercel.app/api?${params}&theme=${lightTheme}#gh-light-mode-only)](https://github.com/${constants.OWNER})
-		[![${constants.OWNER}'s GitHub stats](https://github-readme-stats.vercel.app/api?${params}&theme=${darkTheme}#gh-dark-mode-only)](https://github.com/${constants.OWNER})
+		[![${constants.OWNER}'s GitHub stats](https://github-readme-stats.vercel.app/api?${params}&theme=${lightTheme}#gh-light-mode-only)](https://github.com/${constants.OWNER}#gh-light-mode-only)
+		[![${constants.OWNER}'s GitHub stats](https://github-readme-stats.vercel.app/api?${params}&theme=${darkTheme}#gh-dark-mode-only)](https://github.com/${constants.OWNER}#gh-dark-mode-only)
 	`;
 }

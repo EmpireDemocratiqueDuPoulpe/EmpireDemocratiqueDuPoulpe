@@ -2,31 +2,39 @@ import dedent from "dedent";
 import constants from "../constants";
 import { github } from "../api";
 import type { RepositoryData } from "../typings/global";
+import type { Options } from "./buildRepositories.types";
 
-export default async function buildRepositories(repositories: Array<string>) : Promise<string> {
+export default async function buildRepositories({ filterBy }: Options = {}) : Promise<string> {
 	console.log("\t> Building repositories...");
-	const repositoryElements: string[] = [];
-	const requests: (Promise<RepositoryData>)[] = [];
+	let repositories: RepositoryData[] = await github.fetchAllRepositoriesOf(constants.OWNER);
 
-	for (const repositoryName of repositories) {
-		requests.push(github.fetchRepository(constants.OWNER, repositoryName));
+	if (filterBy) {
+		repositories = repositories.filter((repository: RepositoryData) : boolean => {
+			if (filterBy.topics) {
+				return repository.topics.some((topic: string) => filterBy.topics!.includes(topic));
+			}
+
+			return true;
+		});
 	}
 
-	return Promise.all(requests).then(
-		(responses: RepositoryData[]) => responses.forEach((repository: RepositoryData) : void => {
-			repositoryElements.push(dedent`
+	const repositoryElements: string[] = [];
+
+	for (const repository of repositories) {
+		repositoryElements.push(dedent`
 			<li>
-			<a href="${repository.html_url}" target="_blank" rel="noopener noreferrer">
+			<b><a href="${repository.html_url}" target="_blank" rel="noopener noreferrer">
 			${repository.name}
 			[${repository.stargazers_count} ⭐ / ${repository.forks_count} 🍴]
 			</a>
-			_> ${repository.description}
+			_></b> ${repository.description}
 			</li>
 		`);
-		})
-	).then(() : string => dedent`
+	}
+
+	return dedent`
 		<ul>
 		${repositoryElements.join("")}
 		</ul>
-	`);
+	`;
 }

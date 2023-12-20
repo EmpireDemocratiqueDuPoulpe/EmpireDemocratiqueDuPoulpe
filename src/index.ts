@@ -25,21 +25,22 @@ async function generateReadme() : Promise<void> {
 	const markdownText: string = dedent`
 		<!--suppress HtmlDeprecatedAttribute -->
 		<div align="center">\n
-		Hi.
+		${constants.DESCRIPTION}
 		\n---
 		${buildStats({
 		lightTheme: "buefy",
 		darkTheme: "material-palenight",
 		show: ["prs_merged", "prs_merged_percentage"],
 		showIcons: true,
-		hideRank: true})}
+		hideRank: true })}
 		</div>
 		\n---
 		## Projects
 		<details>\n
 		<summary>School projects</summary>
 		Here's the list of the projects I have done during my studies.
-		${await buildRepositories(["Pollygon"])}
+		${await buildRepositories({
+		filterBy: { topics: ["school-project"] } })}
 		</details>
 		\n---
 		## Contact

@@ -4,6 +4,7 @@ import { convertToBase64URI } from "./utils/images";
 export default {
 	FILE_PATH: "../README.md",
 	OWNER: "EmpireDemocratiqueDuPoulpe",
+	DESCRIPTION: "Hi.",
 	BADGES: {
 		theme: "for-the-badge",
 		list: [

@@ -1,10 +1,7 @@
-import fs from "fs";
-import mime from "mime-types";
-import type { ImageMimeType, Base64URI } from "./images.types";
+import Jimp from "jimp";
+import type { Base64URI } from "./images.types";
 
-export function convertToBase64URI(filepath: string) : Base64URI {
-	const buffer: Buffer = fs.readFileSync(filepath);
-	const base64Str: string = Buffer.from(buffer).toString("base64");
-
-	return `data:${mime.lookup(filepath) as ImageMimeType};base64,${base64Str}`;
+export async function convertToBase64URI(filepath: string, size: number = 32, quality: number = 50) : Promise<Base64URI> {
+	const image: Jimp = await Jimp.read(filepath);
+	return await image.resize(size, size).quality(quality).getBase64Async(Jimp.MIME_PNG) as Base64URI;
 }

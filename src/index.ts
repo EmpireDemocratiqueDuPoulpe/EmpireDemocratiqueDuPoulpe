@@ -6,7 +6,7 @@ import { JSDOM, DOMWindow } from "jsdom";
 import DOMPurify from "dompurify";
 import dedent from "dedent";
 import { buildBadges, buildRepositories, buildStats } from "./builders";
-import constants from "./constants";
+import constants, { initializeConstants } from "./constants";
 
 // Setup
 setGlobalDispatcher(new Agent({ connect: { timeout: 60_000 } }) );
@@ -17,6 +17,8 @@ marked.use({ async: true, breaks: false, gfm: true, pedantic: false, silent: fal
 
 async function generateReadme() : Promise<void> {
 	console.time("generateReadme::process");
+	await initializeConstants();
+
 	const absoluteFilePath: string = path.resolve(__dirname, constants.FILE_PATH);
 	const fileName: string = path.basename(absoluteFilePath);
 

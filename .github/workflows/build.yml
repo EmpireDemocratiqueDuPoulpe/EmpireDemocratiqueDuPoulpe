@@ -24,7 +24,7 @@ jobs:
         run: |-
           git add .
           git diff
-          git config --global user.email = "alexislecomte.pro@protonmail.com"
-          git config --global user.name = "EmpireDemocratiqueDuPoulpe"
+          git config --global user.email "alexislecomte.pro@protonmail.com"
+          git config --global user.name "EmpireDemocratiqueDuPoulpe"
           git commit -m "auto-update: Rebuilt README.md" -a || exit 0
           git push

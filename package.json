@@ -1,0 +1,44 @@
+{
+  "name": "empiredemocratiquedupoulpe",
+  "version": "1.0.0",
+  "description": "Automated profile README.md",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node build/index.js",
+    "build": "npx tsc",
+    "build:watch": "npx tsc-watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmpireDemocratiqueDuPoulpe/EmpireDemocratiqueDuPoulpe.git"
+  },
+  "keywords": [
+    "readme",
+    "automated",
+    "github"
+  ],
+  "author": "Empire Démocratique du Poulpe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EmpireDemocratiqueDuPoulpe/EmpireDemocratiqueDuPoulpe/issues"
+  },
+  "homepage": "https://github.com/EmpireDemocratiqueDuPoulpe/EmpireDemocratiqueDuPoulpe#readme",
+  "dependencies": {
+    "dedent": "^1.5.1",
+    "dompurify": "^3.0.6",
+    "jimp": "^0.22.10",
+    "jsdom": "^23.0.1",
+    "marked": "^11.1.0",
+    "undici": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/dompurify": "^3.0.5",
+    "@types/jsdom": "^21.1.6",
+    "@types/node": "^20.10.5",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  }
+}

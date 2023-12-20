@@ -1,0 +1,8 @@
+# NPM
+node_modules/
+
+# Build files
+build/
+
+# IDE
+.idea/

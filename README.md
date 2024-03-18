@@ -124,5 +124,5 @@ _&gt;</b> Just Do It is a website with the task to increase our productivity by 
 </div>
 
 <blockquote>
-<p>Updated at: 3/11/2024, 5:13:00 AM</p>
+<p>Updated at: 3/18/2024, 5:13:27 AM</p>
 </blockquote>

@@ -39,7 +39,7 @@ AtmosWeather
 </a>
 _&gt;</b> AtmosWeather is a website built with React.js that can display daily or weekly meteorological data about a city.
 </li><li>
-<b><a rel="noopener noreferrer" href="https://github.com/Breadator258/GoodFork-API">
+<b><a rel="noopener noreferrer" href="https://github.com/Thundervolted/GoodFork-API">
 GoodFork-API
 [0 ⭐ / 0 🍴]
 </a>
@@ -124,5 +124,5 @@ _&gt;</b> Just Do It is a website with the task to increase our productivity by 
 </div>
 
 <blockquote>
-<p>Updated at: 8/26/2024, 5:14:00 AM</p>
+<p>Updated at: 9/2/2024, 5:14:57 AM</p>
 </blockquote>

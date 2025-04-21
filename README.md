@@ -15,6 +15,18 @@
 Here's the list of the projects I have done during my studies.
 <ul>
 <li>
+<b><a rel="noopener noreferrer" href="https://github.com/EmpireDemocratiqueDuPoulpe/logomotive-api">
+logomotive-api
+[0 ⭐ / 0 🍴]
+</a>
+_&gt;</b> Logomotive is a Logo editor and interpreter available directly on the Web. Users can create Logo scripts and share them with other platform users.
+</li><li>
+<b><a rel="noopener noreferrer" href="https://github.com/EmpireDemocratiqueDuPoulpe/logomotive-web-app">
+logomotive-web-app
+[0 ⭐ / 0 🍴]
+</a>
+_&gt;</b> Logomotive is a Logo editor and interpreter available directly on the Web. Users can create Logo scripts and share them with other platform users.
+</li><li>
 <b><a rel="noopener noreferrer" href="https://github.com/EmpireDemocratiqueDuPoulpe/SupRailroad">
 SupRailroad
 [1 ⭐ / 0 🍴]
@@ -124,5 +136,5 @@ _&gt;</b> Just Do It is a website with the task to increase our productivity by 
 </div>
 
 <blockquote>
-<p>Updated at: 4/14/2025, 5:17:49 AM</p>
+<p>Updated at: 4/21/2025, 5:17:43 AM</p>
 </blockquote>
